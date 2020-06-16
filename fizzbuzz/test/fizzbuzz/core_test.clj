@@ -8,3 +8,6 @@
 
 (deftest number-1-is-converted-to-string-1
   (is (= "1" (number-to-string 1))))
+
+(deftest number-3-is-converted-to-string-Fizz
+  (is (= "Fizz" (number-to-string 3))))

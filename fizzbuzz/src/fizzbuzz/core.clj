@@ -5,7 +5,9 @@
   (zero? (mod number divisor)))
 
 (defn number-to-string [number]
-  (str number))
+  (cond
+    (divisible-by? 3 number) "Fizz"
+    :else (str number)))
 
 (defn -main
   "I don't do a whole lot ... yet."
