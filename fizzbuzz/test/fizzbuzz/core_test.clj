@@ -6,3 +6,5 @@
   (is (= true (divisible-by? 3 3)))
   (is (= true (divisible-by? 5 10))))
 
+(deftest number-1-is-converted-to-string-1
+  (is (= "1" (number-to-string 1))))
