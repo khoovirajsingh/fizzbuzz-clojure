@@ -6,6 +6,8 @@
 
 (defn number-to-string [number]
   (cond
+    (divisible-by? 15 number) "FizzBuzz"
+    (divisible-by? 5 number) "Buzz"
     (divisible-by? 3 number) "Fizz"
     :else (str number)))
 

@@ -11,3 +11,9 @@
 
 (deftest number-3-is-converted-to-string-Fizz
   (is (= "Fizz" (number-to-string 3))))
+
+(deftest number-5-is-converted-to-string-Buzz
+  (is (= "Buzz" (number-to-string 5))))
+
+(deftest number-15-is-converted-to-string-FizzBuzz
+  (is (= "FizzBuzz" (number-to-string 5))))
