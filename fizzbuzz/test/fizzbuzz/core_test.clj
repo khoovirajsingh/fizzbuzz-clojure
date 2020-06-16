@@ -16,4 +16,7 @@
   (is (= "Buzz" (number-to-string 5))))
 
 (deftest number-15-is-converted-to-string-FizzBuzz
-  (is (= "FizzBuzz" (number-to-string 5))))
+  (is (= "FizzBuzz" (number-to-string 15))))
+
+(deftest range-of-numbers-are-mapped-to-string
+  (is (= '("1" "2" "Fizz" "4" "Buzz" "Fizz" "7" "8" "Fizz") (fizz-buzz-until 10))))

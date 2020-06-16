@@ -11,6 +11,9 @@
     (divisible-by? 3 number) "Fizz"
     :else (str number)))
 
+(defn fizz-buzz-until [max]
+  (map number-to-string (range 1 max)))
+
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
