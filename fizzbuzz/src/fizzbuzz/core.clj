@@ -14,7 +14,11 @@
 (defn fizz-buzz-until [max]
   (map number-to-string (range 1 max)))
 
+(defn format [strings]
+  (clojure.string/join "\n" strings))
+
+
 (defn -main
-  "I don't do a whole lot ... yet."
+  "Display FizzBuzz sequence."
   [& args]
-  (println "Hello, World!"))
+  (println (format (fizz-buzz-until 100))))

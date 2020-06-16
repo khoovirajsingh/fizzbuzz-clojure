@@ -20,3 +20,7 @@
 
 (deftest range-of-numbers-are-mapped-to-string
   (is (= '("1" "2" "Fizz" "4" "Buzz" "Fizz" "7" "8" "Fizz") (fizz-buzz-until 10))))
+
+(deftest newline-is-added-between-list-of-strings
+  (is (= "1\n2\nFizz" (format '("1" "2" "Fizz")))))
+  
