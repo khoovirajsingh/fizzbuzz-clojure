@@ -2,6 +2,7 @@
   (:require [clojure.test :refer :all]
             [fizzbuzz.core :refer :all]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(deftest divisible-by
+  (is (= true (divisible-by? 3 3)))
+  (is (= true (divisible-by? 5 10))))
+
